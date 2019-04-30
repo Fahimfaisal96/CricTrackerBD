@@ -1,11 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".showSinglePlayer">
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:layout_width="fill_parent"
+    android:background="@drawable/wall"
+    android:layout_height="fill_parent">
 
-    
+/*
+    String name;
+    String role;
+    String match;
+    String innings;
+    String runs;
+    String average;
+    String strikeRate;
+    String hundreds;
+    String fifties;
+    String notOuts;
+    String bestScore;
+    String balls;
+    String runsConceded;
+    String wickets;
+    String economy;
+    String bowlingAverage;
+    String bowlingStrikeRate;
+    String fifers;
+    String bestFigure;*/
 
-</LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/singleUser_profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="33dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="visible"
+        app:civ_border_color="#000000"
+        app:civ_border_width="3dp" />
+
+
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:background="@drawable/description_back"
+        android:layout_margin="10dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/name"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="1dp"
+            android:text="Rafid Ameer Mahmud"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="357dp"
+            android:text="Name :"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="325dp"
+            android:text="Email :"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/role_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/role"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="1dp"
+            android:text="blabla@gmail.com"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/match_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/role"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="32dp"
+            android:text="23"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="293dp"
+            android:text="match :"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/innings_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/role"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="68dp"
+            android:text="13"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/innings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="261dp"
+            android:text="innings :"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/phone_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/role"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="100dp"
+            android:text="+88017....."
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/editUserPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="229dp"
+            android:text="Phone :"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/bio_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/role"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="130dp"
+            android:text="blablabla.................sdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="197dp"
+            android:text="Bio :"
+            android:textSize="20dp" />
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/Edit_photo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="0dp"
+        android:onClick="toEditProfilePicture"
+        android:text="Edit profile"
+        android:textColor="@drawable/button_back"
+        android:visibility="invisible" />
+
+
+
+    <Button
+        android:id="@+id/toUserQuestions"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/button_back"
+        android:onClick="gotoQuestions"
+        android:text="Question"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>

@@ -5,34 +5,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/wall"
     tools:context=".FrontPage">
 
+
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Fixtures"
         android:id="@+id/fixtures"
-        />
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:text="Fixtures"
+        android:background="@drawable/button_back"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+
+    <Button
         android:id="@+id/Scorecard"
-        android:text="Scorecard"/>
-    <Button
         android:layout_width="match_parent"
+        android:layout_margin="20dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Scorecard"
+        android:background="@drawable/button_back"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <Button
         android:id="@+id/Players"
-        android:text="Individual Players"/>
-
-    <Button
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Individual Players"
+        android:background="@drawable/button_back"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <Button
         android:id="@+id/Livescore"
-        android:text="Live Score"/>
-
-    <Button
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Live Score"
+        android:background="@drawable/button_back"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <Button
         android:id="@+id/Logout"
-        android:text="Logout"/>
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Logout"
+        android:background="@drawable/button_back"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
 </LinearLayout>

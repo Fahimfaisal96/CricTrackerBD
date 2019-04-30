@@ -1,62 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
 
+    android:layout_height="fill_parent"
+    android:background="@drawable/wall"
+    android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/fullNameField"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/regiPasswordField"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Full Name"
-        android:inputType="textPersonName"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/regiPasswordField"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/emailField"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:padding="8dp" />
-
-
-
-
-    <EditText
-        android:id="@+id/emailField"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="95dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:padding="8dp" />
-
-    <Button
-        android:id="@+id/doneButton"
-        android:text="Done"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/fullNameField"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
-        android:background="@android:color/holo_green_light"
-        />
 
     <TextView
         android:id="@+id/textView2"
@@ -69,6 +20,7 @@
         android:layout_marginTop="44dp"
         android:layout_marginEnd="99dp"
         android:text="Please fill in this form to create an account!"
+        android:textColor="#fff"
         android:visibility="visible" />
 
     <TextView
@@ -80,7 +32,55 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="7dp"
         android:text="Sign Up"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="#fff" />
 
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/fullNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/regiPasswordField"
+        android:background=""
+        android:hint="Full Name"
+        android:textColor="#fff"
+        android:textColorHint="#808080"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:inputType="textEmailAddress"
+        android:textColor="#fff"
+        android:textColorHint="#808080"
+        android:hint="Email"
+        />
+
+    <EditText
+        android:id="@+id/regiPasswordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/emailField"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#808080"/>
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/fullNameField"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/holo_green_light"
+        android:textColor="#fff"
+        android:text="Done" />
+
+
+
+</LinearLayout>
