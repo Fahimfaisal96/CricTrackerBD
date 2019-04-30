@@ -15,6 +15,9 @@ public class Fixture {
         this.format = format;
         this.key = key;
     }
+    public Fixture(){
+
+    }
 
     String key;
 

@@ -89,9 +89,7 @@ public class showDateList extends Activity {
                     mFixtureKey.add(fixture.getKey());
                     i++;
                 }
-                Collections.reverse(mFixtureDate);
-                Collections.reverse(mFixtureFormat);
-                Collections.reverse(mFixtureKey);
+
                 initRecyclerView();
             }
 

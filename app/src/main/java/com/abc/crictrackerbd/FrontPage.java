@@ -84,7 +84,7 @@ public class FrontPage extends Activity {
 
 
     public void takeTofixtures(){
-        Intent intent = new Intent(this,showFixtures.class);
+        Intent intent = new Intent(this,showFixtureFormat.class);
         intent.putExtra("current",nowUser);
         startActivity(intent);
     }

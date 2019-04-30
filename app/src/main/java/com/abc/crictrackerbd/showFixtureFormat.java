@@ -4,11 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 
 public class showFixtureFormat extends Activity {
 
-    RelativeLayout test,odi,t20;
+    Button test,odi,t20;
     String nowUer;
 
     @Override

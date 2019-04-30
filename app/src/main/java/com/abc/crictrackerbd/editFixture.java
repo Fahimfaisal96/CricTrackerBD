@@ -91,7 +91,7 @@ public class editFixture extends Activity {
         });
         Intent intent = new Intent(this, showSingleFixture.class);
         intent.putExtra("showKey",key);
-        intent.putExtra("format",format);
+        intent.putExtra("FixtureFormat",format);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
         finish();

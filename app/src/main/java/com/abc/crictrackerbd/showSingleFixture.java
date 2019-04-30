@@ -64,7 +64,7 @@ public class showSingleFixture extends Activity {
 
 
         key = getIntent().getStringExtra("showKey");
-        format = getIntent().getStringExtra("format");
+        format = getIntent().getStringExtra("FixtureFormat");
         showSingleFixtureDatabaseRef = FirebaseDatabase.getInstance().getReference("fixture/"+ format+ "/" + key);
 
 

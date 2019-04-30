@@ -35,7 +35,7 @@ public class addFixture extends Activity {
         mSubmitButton=(Button) findViewById(R.id.submitButton);
         mProgress= new ProgressDialog(this);
         FixtureFormat = getIntent().getStringExtra("FixtureFormat");
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("teacher").child(FixtureFormat);
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("fixture").child(FixtureFormat);
 
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +57,7 @@ public class addFixture extends Activity {
 
         if(!TextUtils.isEmpty(opponent_val)&& !TextUtils.isEmpty(venue_val)&& !TextUtils.isEmpty(date_val)&& !TextUtils.isEmpty(format_val)&& !TextUtils.isEmpty(time_val) ){
             DatabaseReference newFixture=mDatabase.push();
-            fixture = new Fixture(opponent_val,venue_val,date_val,format_val,time_val,newFixture.getKey());
+            fixture = new Fixture(opponent_val,venue_val,date_val,time_val,format_val,newFixture.getKey());
             mDatabase.child(newFixture.getKey()).setValue(fixture);
             mProgress.dismiss();
             //startActivity(new Intent(addPost.this,noticeShowPage.class));

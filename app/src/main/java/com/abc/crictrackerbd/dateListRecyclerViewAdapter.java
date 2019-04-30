@@ -23,7 +23,7 @@ class dateListRecyclerViewAdapter extends RecyclerView.Adapter<dateListRecyclerV
     private Context context;
 
 
-    public dateListRecyclerViewAdapter(Context context, ArrayList<String> mFixtureDate, ArrayList<String> mFixtureFormat, ArrayList<String> mFixtureKey) {
+    public dateListRecyclerViewAdapter(Context context, ArrayList<String> mFixtureFormat, ArrayList<String> mFixtureDate, ArrayList<String> mFixtureKey) {
         this.mFixtureDate = mFixtureDate;
         this.mFixtureFormat = mFixtureFormat;
         this.mFixtureKey = mFixtureKey;
@@ -43,7 +43,7 @@ class dateListRecyclerViewAdapter extends RecyclerView.Adapter<dateListRecyclerV
 
         Log.d(TAG, "onBindViewHolder: " + i);
 
-        viewHolder.TeacherListName.setText(mFixtureDate.get(i));
+        viewHolder.DateListName.setText(mFixtureDate.get(i));
 
 
         viewHolder.parentLayout.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +52,7 @@ class dateListRecyclerViewAdapter extends RecyclerView.Adapter<dateListRecyclerV
                 //To Single Teacher Page
                 Intent intent = new Intent(context,showSingleFixture.class);
                 intent.putExtra("showKey",mFixtureKey.get(i));
-                intent.putExtra("format",mFixtureFormat.get(i));
+                intent.putExtra("FixtureFormat",mFixtureFormat.get(i));
                 context.startActivity(intent);
             }
         });
@@ -65,11 +65,11 @@ class dateListRecyclerViewAdapter extends RecyclerView.Adapter<dateListRecyclerV
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView TeacherListName;
+        TextView DateListName;
         LinearLayout parentLayout;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            TeacherListName = itemView.findViewById(R.id.fixture_date);
+            DateListName = itemView.findViewById(R.id.fixture_date);
             parentLayout = itemView.findViewById(R.id.date_element_layout);
         }
     }
