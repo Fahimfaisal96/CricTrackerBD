@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".editPlayer">
+
+    <EditText
+        android:id="@+id/editBestFigure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="45dp"
+        android:hint="Change Name"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editFifers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="25dp"
+        android:hint="Change Fifers"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editBowlingStrikeRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="65dp"
+        android:hint="Change BowlingStrikeRate"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editBowlingAverage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="85dp"
+        android:hint="Change Bowling Average"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editEconomy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="105dp"
+        android:hint="Change Economy"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editWickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="125dp"
+        android:hint="Change Wickets"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editRunsConceded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="145dp"
+        android:hint="Change Runs Conceded"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editBalls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="165dp"
+        android:hint="Change Overs"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editBestScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="185dp"
+        android:hint="Change Best Score"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editNotOuts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="205dp"
+        android:hint="Change NotOuts"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editFifties"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="215dp"
+        android:hint="Change Fifties"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editHundreds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="235dp"
+        android:hint="Change Hundreds"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editStrikeRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="255dp"
+        android:hint="Change StrikeRate"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editAverage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="275dp"
+        android:hint="Change Average"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editRuns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="305dp"
+        android:hint="Change Runs"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editInnings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="325dp"
+        android:hint="Change Innings"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="365dp"
+        android:hint="Change Role"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="345dp"
+        android:hint="Change Match"
+        android:textSize="10dp" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/rectangle" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/editImage"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="33dp"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:civ_border_color="#000000"
+        app:civ_border_width="3dp" />
+
+    <Button
+        android:id="@+id/editSelectButton"
+        style="@android:style/Widget.Button"
+        android:layout_width="119dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/white"
+        android:text="Select image" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="385dp"
+        android:hint="Change Name"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/editDone"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="Done"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
