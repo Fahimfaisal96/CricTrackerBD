@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".editScorecard2"></activity>
+        <activity android:name=".addPlayer"></activity>
+        <activity android:name=".showSinglePlayer" />
+        <activity android:name=".editScorecard2" />
         <activity android:name=".editScorecard" />
         <activity android:name=".showSingleScorecard2" />
         <activity android:name=".showSingleScorecard" />
