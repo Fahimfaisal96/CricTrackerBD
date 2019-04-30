@@ -13,7 +13,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".editFixture"></activity>
+        <activity android:name=".editScorecard2"></activity>
+        <activity android:name=".editScorecard" />
+        <activity android:name=".showSingleScorecard2" />
+        <activity android:name=".showSingleScorecard" />
+        <activity android:name=".addScorecard2" />
+        <activity android:name=".addScorecard" />
+        <activity android:name=".showScorecardDateList" />
+        <activity android:name=".showScorecardFormat" />
+        <activity android:name=".editFixture" />
         <activity android:name=".addFixture" />
         <activity android:name=".showSingleFixture" />
         <activity android:name=".showDateList" />

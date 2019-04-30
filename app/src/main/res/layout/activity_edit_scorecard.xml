@@ -4,31 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:layout_editor_absoluteY="73dp"
-    tools:context=".editFixture"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    app:layout_editor_absoluteY="73dp"
+    tools:context=".editScorecard">
 
     <EditText
-        android:id="@+id/editOpponent"
+        android:id="@+id/editToss"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:padding="20dp"
-        android:hint="Opponent"
+        android:hint="Toss"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editVenue"
+        android:id="@+id/editFirstInnings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:padding="20dp"
-        android:hint="Venue"
+        android:hint="First Innings"
         android:inputType="textMultiLine"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editOpponent" />
+        app:layout_constraintTop_toBottomOf="@+id/editToss" />
+
+    <EditText
+        android:id="@+id/editSecondInnings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="20dp"
+        android:hint="Second Innings"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFirstInnings" />
+
 
 
     <EditText
@@ -40,15 +52,15 @@
         android:hint="Date"
         android:inputType="textMultiLine"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editVenue" />
+        app:layout_constraintTop_toBottomOf="@+id/editSecondInnings" />
 
     <EditText
-        android:id="@+id/editTime"
+        android:id="@+id/editLink"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:padding="20dp"
-        android:hint="Time"
+        android:hint="Link"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editDate" />
@@ -56,7 +68,7 @@
 
 
     <Button
-        android:id="@+id/editFixtureSubmitButton"
+        android:id="@+id/editScorecardSubmitButton"
         android:layout_width="384dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"

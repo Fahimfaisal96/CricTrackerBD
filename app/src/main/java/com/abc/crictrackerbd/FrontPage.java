@@ -89,7 +89,7 @@ public class FrontPage extends Activity {
         startActivity(intent);
     }
     public void takeToScorecard(){
-        Intent intent = new Intent(this,showScorecard.class);
+        Intent intent = new Intent(this,showScorecardFormat.class);
         intent.putExtra("current",nowUser);
         startActivity(intent);
     }
