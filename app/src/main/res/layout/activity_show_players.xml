@@ -52,7 +52,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Done"
-            android:background="@android:color/holo_green_light"
+            android:background="#980808"
+            android:textColor="#fff"
             android:id="@+id/FilterDonePlayer"/>
     </LinearLayout>
 

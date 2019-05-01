@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColorHint="#808080"
         android:padding="20dp"
         android:hint="Toss"
         android:inputType="textPersonName"
@@ -25,6 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColorHint="#808080"
         android:padding="20dp"
         android:hint="First Innings Score"
         android:inputType="textMultiLine"
@@ -37,6 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColorHint="#808080"
         android:padding="20dp"
         android:hint="Second Innings"
         android:inputType="textMultiLine"
@@ -48,6 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColorHint="#808080"
         android:padding="20dp"
         android:hint="Date"
         android:inputType="textPersonName"
@@ -61,6 +65,7 @@
         android:ems="10"
         android:padding="20dp"
         android:hint="Link"
+        android:textColorHint="#808080"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addDate" />
@@ -69,12 +74,12 @@
 
     <Button
         android:id="@+id/submitButton"
-        android:background="@android:color/holo_green_light"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-
+        android:background="#980808"
+        android:textColor="#fff"
         android:text="submit" />
 
 </LinearLayout>

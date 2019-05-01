@@ -17,6 +17,7 @@
         android:ems="10"
         android:padding="20dp"
         android:hint="Opponent"
+        android:textColorHint="#808080"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,6 +29,7 @@
         android:ems="10"
         android:padding="20dp"
         android:hint="Venue"
+        android:textColorHint="#808080"
         android:inputType="textMultiLine"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addOpponent" />
@@ -40,6 +42,7 @@
         android:ems="10"
         android:padding="20dp"
         android:hint="Date"
+        android:textColorHint="#808080"
         android:inputType="textMultiLine"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addVenue" />
@@ -51,6 +54,7 @@
         android:ems="10"
         android:padding="20dp"
         android:hint="Time"
+        android:textColorHint="#808080"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addDate" />
@@ -59,12 +63,12 @@
 
     <Button
         android:id="@+id/submitButton"
-        android:background="@android:color/holo_green_light"
+        android:background="#980808"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-
+        android:textColor="#fff"
         android:text="submit" />
 
 </LinearLayout>
