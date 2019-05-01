@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     app:layout_editor_absoluteY="73dp"
     android:orientation="vertical"
+    android:background="@drawable/wall"
     tools:context=".addScorecard2">
 
     <EditText

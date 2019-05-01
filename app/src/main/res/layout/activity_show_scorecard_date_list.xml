@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".showScorecardDateList"
+    android:background="@drawable/wall"
     android:orientation="vertical">
 
     <LinearLayout
@@ -16,7 +17,7 @@
             android:id="@+id/DateList"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="12dp"
+            android:layout_gravity="center"
             android:textSize="24sp"
             android:text="Date List"
             android:textColor="#808080"
@@ -26,9 +27,11 @@
             android:id="@+id/AddRecord"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
             android:text="Add Record"
-            android:textSize="8dp"/>
+            android:textColor="#808080"
+            android:layout_gravity="center"
+            android:textSize="12dp" />
 
     </LinearLayout>
 

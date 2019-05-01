@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".showDateList"
+    android:background="@drawable/wall"
     android:orientation="vertical">
 
     <LinearLayout
@@ -16,8 +17,8 @@
             android:id="@+id/DateList"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="12dp"
             android:textSize="24sp"
+            android:layout_gravity="center"
             android:text="Date List"
             android:textColor="#808080"
             android:textStyle="bold"/>
@@ -26,9 +27,11 @@
             android:id="@+id/AddFixture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
             android:text="Add Fixture"
-            android:textSize="8dp"/>
+            android:textColor="#808080"
+            android:textSize="12dp"/>
 
     </LinearLayout>
 

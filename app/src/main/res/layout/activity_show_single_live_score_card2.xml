@@ -7,6 +7,7 @@
     android:paddingEnd="10dp"
     android:paddingTop="30dp"
     android:layout_height="fill_parent"
+    android:background="@drawable/wall"
     android:orientation="vertical"
     tools:context=".showSingleLiveScorecard2">
 
@@ -186,9 +187,10 @@
             android:id="@+id/link_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
             android:text="LINK"
+            android:layout_marginStart="30dp"
             android:textColor="#fff"
+            android:background="#980808"
             android:textSize="19dp" />
 
     </LinearLayout>
@@ -208,7 +210,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Delete"
-            android:background="@android:color/holo_green_light"
+            android:background="#980808"
+            android:textColor="#fff"
             android:visibility="visible" />
 
         <Button
@@ -217,7 +220,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:text="Edit"
-            android:background="@android:color/holo_green_light"
+            android:background="#980808"
+            android:textColor="#fff"
             android:visibility="visible" />
     </LinearLayout>
 
