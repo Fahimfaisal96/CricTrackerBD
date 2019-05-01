@@ -7,7 +7,8 @@
     android:layout_width="fill_parent"
     android:background="@drawable/wall"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".editPlayer">
 
 
     <LinearLayout
@@ -67,7 +68,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Name"
+                        android:hint="Name"
                         android:textColor="#fff"/>
 
 
@@ -79,11 +80,11 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/role"
+                        android:id="@+id/editRole"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Role"
+                        android:hint="Role"
                         android:textColor="#fff"/>
                 </LinearLayout>
 
@@ -93,26 +94,11 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/match"
+                        android:id="@+id/editMatch"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Match"
-                        android:textColor="#fff"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <EditText
-                        android:id="@+id/innings"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Innings"
+                        android:hint="Match"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
@@ -123,11 +109,11 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/runs"
+                        android:id="@+id/editInnings"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Runs"
+                        android:hint="Innings"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
@@ -138,25 +124,11 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/average"
+                        android:id="@+id/editRuns"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Average"
-                        android:textColor="#fff"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <EditText
-                        android:id="@+id/strikeRate"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Strike Rate"
+                        android:hint="Runs"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
@@ -167,11 +139,25 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/hundreds"
+                        android:id="@+id/editAverage"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Hundreds"
+                        android:hint="Average"
+                        android:textColor="#fff"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editStrikeRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Strike Rate"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
@@ -182,11 +168,11 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/fifties"
+                        android:id="@+id/editHundreds"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Fifties"
+                        android:hint="Hundreds"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
@@ -197,11 +183,11 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/notOuts"
+                        android:id="@+id/editFifties"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Not outs"
+                        android:hint="Fifties"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
@@ -212,11 +198,11 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/bestScore"
+                        android:id="@+id/editNotOuts"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Best score"
+                        android:hint="Not outs"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
@@ -227,11 +213,11 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/balls"
+                        android:id="@+id/editBestScore"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Balls"
+                        android:hint="Best score"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
@@ -242,11 +228,11 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/runsConceded"
+                        android:id="@+id/editBalls"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Runs conceded"
+                        android:hint="Balls"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
@@ -257,11 +243,11 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/wickets"
+                        android:id="@+id/editRunsConceded"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Wickets"
+                        android:hint="Runs conceded"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
@@ -272,11 +258,11 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/economy"
+                        android:id="@+id/editWickets"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Economy"
+                        android:hint="Wickets"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
@@ -287,11 +273,11 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/bowlingAverage"
+                        android:id="@+id/editEconomy"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Bowling average"
+                        android:hint="Economy"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
@@ -302,11 +288,11 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/bowlingStrikeRate"
+                        android:id="@+id/editBowlingAverage"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Bowling strike rate"
+                        android:hint="Bowling average"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
@@ -317,11 +303,11 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/fifers"
+                        android:id="@+id/editBowlingStrikeRate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Fifers"
+                        android:hint="Bowling strike rate"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
@@ -332,11 +318,26 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/bestFigure"
+                        android:id="@+id/editFifers"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Best figure"
+                        android:hint="Fifers"
+                        android:textColor="#fff"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editBestFigure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Best figure"
                         android:textColor="#fff"/>
 
                 </LinearLayout>
