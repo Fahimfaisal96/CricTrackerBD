@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".showLivescore">
+    android:layout_height="wrap_content"
+    tools:context=".showLivescore"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Test"
+        android:textSize="8dp"/>
+
+    <Button
+        android:id="@+id/odi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ODI"
+        android:textSize="8dp"/>
+
+    <Button
+        android:id="@+id/t20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="T20"
+        android:textSize="8dp"/>
+
+</LinearLayout>

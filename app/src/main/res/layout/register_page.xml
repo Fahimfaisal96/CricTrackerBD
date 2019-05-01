@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:layout_below="@+id/regiPasswordField"
-        android:background=""
+        android:background="@drawable/wall"
         android:hint="Full Name"
         android:textColor="#fff"
         android:textColorHint="#808080"

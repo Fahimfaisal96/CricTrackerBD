@@ -74,7 +74,7 @@ public class showSingleLiveScorecard2 extends Activity {
 
         key = getIntent().getStringExtra("showKey");
         format = getIntent().getStringExtra("LivescoreFormat");
-        showSingleScorecardDatabaseRef = FirebaseDatabase.getInstance().getReference("livscore/"+ format + "/" + key);
+        showSingleScorecardDatabaseRef = FirebaseDatabase.getInstance().getReference("livescore/"+ format + "/" + key);
 
 
         showSingleScorecardDatabaseRef.addValueEventListener(new ValueEventListener() {

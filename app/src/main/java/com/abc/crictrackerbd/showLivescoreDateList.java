@@ -41,7 +41,7 @@ public class showLivescoreDateList extends Activity {
         AddLiveScorecardButton.setVisibility(View.GONE);
         nowUser = getIntent().getStringExtra("current");
         LiveScorecardFormat = getIntent().getStringExtra("LivescoreFormat");
-        LiveScorecardPageDataBaseRef = FirebaseDatabase.getInstance().getReference("livescorecard/"+LiveScorecardFormat);
+        LiveScorecardPageDataBaseRef = FirebaseDatabase.getInstance().getReference("livescore/"+LiveScorecardFormat);
 
         userDatabase=FirebaseDatabase.getInstance().getReference("users/"+nowUser.replace('.','&'));
 

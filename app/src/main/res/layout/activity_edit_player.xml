@@ -239,7 +239,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="110dp"
         android:layout_marginEnd="10dp"
-        android:background="@drawable/white"
+        android:background="@drawable/wall"
         android:text="Select image" />
 
     <EditText
