@@ -20,6 +20,15 @@ public class Player {
     String bowlingStrikeRate;
     String fifers;
     String bestFigure;
+    String format;
+
+    public String getFormat() {
+        return format;
+    }
+
+    public void setFormat(String format) {
+        this.format = format;
+    }
 
     public String getBestFigure() {
         return bestFigure;
@@ -37,7 +46,7 @@ public class Player {
     public Player(){
     }
 
-    public Player(String name, String role, String match, String innings, String runs, String average, String strikeRate, String hundreds, String fifties, String notOuts, String bestScore, String balls, String runsConceded, String wickets, String economy, String bowlingAverage, String bowlingStrikeRate, String fifers, String bestFigure, String key, String dpUrl) {
+    public Player(String name, String role, String match, String innings, String runs, String average, String strikeRate, String hundreds, String fifties, String notOuts, String bestScore, String balls, String runsConceded, String wickets, String economy, String bowlingAverage, String bowlingStrikeRate, String fifers, String bestFigure, String dpUrl, String format,String key) {
         this.name = name;
         this.role = role;
         this.match = match;
@@ -59,6 +68,7 @@ public class Player {
         this.bestFigure = bestFigure;
         this.dpUrl = dpUrl;
         this.key = key;
+        this.format = format;
 
     }
 

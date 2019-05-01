@@ -24,12 +24,14 @@ public class playerListRecyclerViewAdapter extends RecyclerView.Adapter<playerLi
     private ArrayList<String> mImages = new ArrayList<>();
     private ArrayList<String> mImageNames = new ArrayList<>();
     private ArrayList<String> mImageKeys = new ArrayList<>();
+    private ArrayList<String> mImageFormat = new ArrayList<>();
     private Context context;
 
-    public playerListRecyclerViewAdapter( Context context, ArrayList<String> mImages, ArrayList<String> mImageNames, ArrayList<String> mImageKeys) {
+    public playerListRecyclerViewAdapter( Context context, ArrayList<String> mImages, ArrayList<String> mImageNames,ArrayList<String> mImageFormat, ArrayList<String> mImageKeys) {
         this.mImages = mImages;
         this.mImageNames = mImageNames;
         this.mImageKeys = mImageKeys;
+        this.mImageFormat = mImageFormat;
         this.context = context;
     }
 
@@ -58,6 +60,7 @@ public class playerListRecyclerViewAdapter extends RecyclerView.Adapter<playerLi
                 //To Single User Page
                 Intent intent = new Intent(context,showSinglePlayer.class);
                 intent.putExtra("showKey",mImageKeys.get(i));
+                intent.putExtra("PlayerFormat",mImageFormat.get(i));
                 context.startActivity(intent);
                 //Toast.makeText(context,mImageNames.get(i),Toast.LENGTH_LONG).show();
             }

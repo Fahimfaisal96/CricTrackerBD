@@ -9,7 +9,6 @@ import android.widget.Button;
 public class showPlayerFormat extends Activity {
     Button test,odi,t20;
     String nowUer;
-    String key;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,16 +20,14 @@ public class showPlayerFormat extends Activity {
         t20 = findViewById(R.id.t20);
 
         nowUer = getIntent().getStringExtra("current");
-        key = getIntent().getStringExtra("showKey");
 
         test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(showPlayerFormat.this,showSinglePlayer.class);
-                intent.putExtra("FixtureFormat","test");
+                Intent intent = new Intent(showPlayerFormat.this,showPlayers.class);
+                intent.putExtra("PlayerFormat","test");
                 intent.putExtra("current",nowUer);
-                intent.putExtra("showKey",key);
                 startActivity(intent);
             }
         });
@@ -38,10 +35,9 @@ public class showPlayerFormat extends Activity {
         odi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(showPlayerFormat.this,showSinglePlayer.class);
-                intent.putExtra("FixtureFormat","odi");
+                Intent intent = new Intent(showPlayerFormat.this,showPlayers.class);
+                intent.putExtra("PlayerFormat","odi");
                 intent.putExtra("current",nowUer);
-                intent.putExtra("showKey",key);
                 startActivity(intent);
             }
         });
@@ -49,10 +45,9 @@ public class showPlayerFormat extends Activity {
         t20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(showPlayerFormat.this,showSinglePlayer.class);
-                intent.putExtra("FixtureFormat","t20");
+                Intent intent = new Intent(showPlayerFormat.this,showPlayers.class);
+                intent.putExtra("PlayerFormat","t20");
                 intent.putExtra("current",nowUer);
-                intent.putExtra("showKey",key);
                 startActivity(intent);
             }
         });

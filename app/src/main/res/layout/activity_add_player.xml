@@ -10,236 +10,245 @@
     android:background="@drawable/wall">
 
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:background="@drawable/description_back">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/addName"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Name"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/addName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
 
-            <EditText
-                android:id="@+id/addRole"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Role"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addRole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Role"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/addMatch"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Match"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <EditText
-                android:id="@+id/addInnings"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Innings"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <EditText
-                android:id="@+id/addRuns"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Runs"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addMatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Match"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addInnings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Innings"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addRuns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Runs"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/addAverage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Average"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <EditText
-                android:id="@+id/addStrikeRate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Strike Rate"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addAverage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Average"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addStrikeRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Strike Rate"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/addHundreds"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Hundreds"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <EditText
-                android:id="@+id/addFifties"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Fifties"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <EditText
-                android:id="@+id/addNotOuts"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="NotOuts"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <EditText
-                android:id="@+id/addBestScore"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Best Score"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <EditText
-                android:id="@+id/addBalls"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Overs"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <EditText
-                android:id="@+id/addRunsConceded"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Runs Conceded"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <EditText
-                android:id="@+id/addWickets"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Wickets"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <EditText
-                android:id="@+id/addEconomy"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Economy"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <EditText
-                android:id="@+id/addBowlingAverage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Bowling Average"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <EditText
-                android:id="@+id/addBowlingStrikeRate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Bowling Strike Rate"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addHundreds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Hundreds"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addFifties"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Fifties"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addNotOuts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="NotOuts"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addBestScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Best Score"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addBalls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Overs"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addRunsConceded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Runs Conceded"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addWickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Wickets"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addEconomy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Economy"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addBowlingAverage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Bowling Average"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addBowlingStrikeRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Bowling Strike Rate"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/addFifers"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Fifers"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <EditText
-                android:id="@+id/addBestFigure"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Best Figure"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addFifers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Fifers"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/addBestFigure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Best Figure"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/doneButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Done"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/format"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:hint="Format"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/format"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="20dp"
-                android:hint="Format"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </LinearLayout>
 
-    </ScrollView>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Done"
+        android:layout_gravity="center"
+        />
 </LinearLayout>
 

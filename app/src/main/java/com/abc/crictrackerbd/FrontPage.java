@@ -95,7 +95,7 @@ public class FrontPage extends Activity {
     }
 
     public void takeToPlayers(){
-        Intent intent = new Intent(this,showPlayers.class);
+        Intent intent = new Intent(this,showPlayerFormat.class);
         intent.putExtra("current",nowUser);
         startActivity(intent);
     }

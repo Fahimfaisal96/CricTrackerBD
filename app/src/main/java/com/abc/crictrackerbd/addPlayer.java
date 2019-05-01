@@ -79,7 +79,7 @@ public class addPlayer extends Activity {
         fifers = findViewById(R.id.addFifers);
         bestFigure = findViewById(R.id.addBestFigure);
         doneButton = findViewById(R.id.doneButton);
-
+        format = findViewById(R.id.format);
 
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,11 +111,12 @@ public class addPlayer extends Activity {
         String bowlingStrikeRate_val=bowlingStrikeRate.getText().toString().trim();
         String fifers_val=fifers.getText().toString().trim();
         String bestFigure_val=bestFigure.getText().toString().trim();
+        String format_val = format.getText().toString().trim();
 
 
         if(!TextUtils.isEmpty(name_val)&& !TextUtils.isEmpty(role_val) ){
             DatabaseReference newPlayer=databaseReference.push();
-             player = new Player(name_val,role_val,match_val,innings_val,runs_val,average_val,strikeRate_val,hundreds_val,fifties_val,notOuts_val,bestScore_val,balls_val,runsConceded_val,wickets_val,economy_val,bowlingAverage_val,bowlingStrikeRate_val,fifers_val,bestFigure_val,"https://i.kym-cdn.com/entries/icons/original/000/003/619/ForeverAlone.jpg",newPlayer.getKey());
+             player = new Player(name_val,role_val,match_val,innings_val,runs_val,average_val,strikeRate_val,hundreds_val,fifties_val,notOuts_val,bestScore_val,balls_val,runsConceded_val,wickets_val,economy_val,bowlingAverage_val,bowlingStrikeRate_val,fifers_val,bestFigure_val,"https://i.kym-cdn.com/entries/icons/original/000/003/619/ForeverAlone.jpg",format_val,newPlayer.getKey());
              databaseReference.child(newPlayer.getKey()).setValue(player);
             mProgress.dismiss();
             //startActivity(new Intent(addPost.this,noticeShowPage.class));

@@ -28,7 +28,9 @@ import com.google.firebase.storage.UploadTask;
 
 public class editPlayer extends Activity {
 
-    String Path;
+    String key;
+    String format;
+
     private final static int PICK_IMAGE_NUM = 107;
 
     private DatabaseReference editPlayerDatabaseRef;
@@ -56,6 +58,7 @@ public class editPlayer extends Activity {
     Button doneEditButton;
     Button selectImage;
     ImageView editPicture;
+    String playerFormat;
 
     String dpURL;
     Uri imageURI;
@@ -67,8 +70,9 @@ public class editPlayer extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_player);
 
-        Path = getIntent().getStringExtra("showKey");
-        editPlayerDatabaseRef = FirebaseDatabase.getInstance().getReference("players/" + Path);
+        key = getIntent().getStringExtra("showKey");
+        format = getIntent().getStringExtra("PlayerFormat");
+        editPlayerDatabaseRef = FirebaseDatabase.getInstance().getReference("players/" + format + "/" + key);
         editPlayerStorageReference = FirebaseStorage.getInstance().getReference("pictures");
 
         editName = findViewById(R.id.editName);
@@ -194,6 +198,7 @@ public class editPlayer extends Activity {
         changedPlayer.setBowlingAverage(editBowlingAverage.getText().toString().trim());
         changedPlayer.setBowlingStrikeRate(editBowlingStrikeRate.getText().toString().trim());
         changedPlayer.setFifers(editFifers.getText().toString().trim());
+        changedPlayer.setFormat(format);
         changedPlayer.setDpUrl(dpURL);
 
 

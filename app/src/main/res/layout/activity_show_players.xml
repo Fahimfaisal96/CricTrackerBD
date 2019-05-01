@@ -13,20 +13,22 @@
         android:orientation="horizontal">
     <TextView
         android:id="@+id/headerPlayerList"
-        android:layout_width="100dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:text="Player List"
         android:textColor="#808080"
         android:padding="10dp"/>
-    <Button
-        android:id="@+id/addPlayer"
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:text="Add Player"
-        android:textColor="#808080"
-        android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/addPlayer"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Add Player"
+            android:textColor="#808080"
+            android:padding="10dp"/>
+
 
 
     </LinearLayout>

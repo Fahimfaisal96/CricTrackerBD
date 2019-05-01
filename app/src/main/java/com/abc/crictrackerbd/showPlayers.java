@@ -22,34 +22,68 @@ import java.util.Collections;
 
 public class showPlayers extends Activity {
 
-    private DatabaseReference userPageDataBaseRef;
+    private DatabaseReference playerPageDataBaseRef;
+    private DatabaseReference userDatabase;
     private FirebaseAuth userPageAuth;
 
     private ArrayList<String> mImageURL = new ArrayList<>();
     private ArrayList<String> mImageNames = new ArrayList<>();
     private ArrayList<String> mImageKeys = new ArrayList<>();
+    private ArrayList<String> mImageFormat = new ArrayList<>();
 
     String nowUser;
     String filter;
+    String format;
 
     EditText filterBox;
     Button filterDone;
     Button AddPlayerButton;
+    User user;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_players);
 
-        userPageDataBaseRef = FirebaseDatabase.getInstance().getReference("player");
+        playerPageDataBaseRef = FirebaseDatabase.getInstance().getReference("player/"+format );
         userPageAuth = FirebaseAuth.getInstance();
+        AddPlayerButton = findViewById(R.id.addPlayer);
+        AddPlayerButton.setVisibility(View.GONE);
 
         nowUser = getIntent().getStringExtra("current");
         filter = getIntent().getStringExtra("filter");
 
         filterBox = findViewById(R.id.FilterBoxPlayer);
         filterDone = findViewById(R.id.FilterDonePlayer);
-        AddPlayerButton = findViewById(R.id.addPlayer);
+        userDatabase=FirebaseDatabase.getInstance().getReference("users/"+nowUser.replace('.','&'));
+
+
+        userDatabase.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                user=dataSnapshot.getValue(User.class);
+                if(user.getIsModerator().equals("true")){
+                    System.out.println("habijabi");
+                    AddPlayerButton.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+        AddPlayerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(showPlayers.this,addPlayer.class);
+                intent.putExtra("PlayerFormat",format);
+                startActivity(intent);
+            }
+
+        });
 
         filterDone.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,22 +98,18 @@ public class showPlayers extends Activity {
                 }
             }
         });
-        AddPlayerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                takeToAddPlayer(v);
-            }
-        });
 
 
 
-        userPageDataBaseRef.addValueEventListener(new ValueEventListener() {
+
+        playerPageDataBaseRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                 mImageKeys.clear();
                 mImageNames.clear();
                 mImageURL.clear();
+                mImageFormat.clear();
 
                 int i=0;
                 for(DataSnapshot ds : dataSnapshot.getChildren()){
@@ -89,6 +119,7 @@ public class showPlayers extends Activity {
                             mImageNames.add(player.getName());
                             mImageURL.add(player.getDpUrl());
                             mImageKeys.add(player.getKey());
+                            mImageFormat.add(player.getFormat());
                             i++;
                         }
                     }
@@ -96,6 +127,7 @@ public class showPlayers extends Activity {
                         mImageNames.add(player.getName());
                         mImageURL.add(player.getDpUrl());
                         mImageKeys.add(player.getKey());
+                        mImageFormat.add(player.getFormat());
                         i++;
                     }
                 }
@@ -112,13 +144,10 @@ public class showPlayers extends Activity {
     private void initRecyclerView(){
 
         RecyclerView recyclerView = findViewById(R.id.recyclerv_view);
-        playerListRecyclerViewAdapter adapter = new playerListRecyclerViewAdapter(this,mImageURL,mImageNames,mImageKeys);
+        playerListRecyclerViewAdapter adapter = new playerListRecyclerViewAdapter(this,mImageURL,mImageNames,mImageFormat,mImageKeys);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
-    private void takeToAddPlayer(View v){
-        Intent intent = new Intent(this,addPlayer.class);
-        startActivity(intent);
-    }
+
 }
