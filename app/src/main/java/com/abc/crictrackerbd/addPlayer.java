@@ -46,7 +46,6 @@ public class addPlayer extends Activity {
     Button doneButton;
 
 
-    private ProgressDialog mProgress;
 
     private DatabaseReference databaseReference;
     private FirebaseAuth userAuthentication;
@@ -93,8 +92,6 @@ public class addPlayer extends Activity {
     }
 
     private  void startAdding(){
-        mProgress.setMessage("Adding");
-        mProgress.show();
         String name_val=name.getText().toString().trim();
         String role_val=role.getText().toString().trim();
         String match_val=match.getText().toString().trim();
@@ -120,7 +117,6 @@ public class addPlayer extends Activity {
             DatabaseReference newPlayer=databaseReference.push();
              player = new Player(name_val,role_val,match_val,innings_val,runs_val,average_val,strikeRate_val,hundreds_val,fifties_val,notOuts_val,bestScore_val,balls_val,runsConceded_val,wickets_val,economy_val,bowlingAverage_val,bowlingStrikeRate_val,fifers_val,bestFigure_val,"https://i.kym-cdn.com/entries/icons/original/000/003/619/ForeverAlone.jpg",format,newPlayer.getKey());
              databaseReference.child(newPlayer.getKey()).setValue(player);
-            mProgress.dismiss();
             //startActivity(new Intent(addPost.this,noticeShowPage.class));
             finish();
 
