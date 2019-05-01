@@ -37,7 +37,7 @@
             android:layout_marginTop="226dp"
             android:layout_marginEnd="0dp"
             android:onClick="toEditProfilePicture"
-            android:text="Edit profile"
+            android:text="Change Photo"
             android:visibility="visible" />
 
 </LinearLayout>
