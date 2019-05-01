@@ -59,7 +59,7 @@ class LiveScorecardDateListRecyclerViewAdapter extends RecyclerView.Adapter<Live
                 else{
                     Intent intent = new Intent(context, showSingleLiveScorecard.class);
                     intent.putExtra("showKey", mLiveScorecardKey.get(i));
-                    intent.putExtra("LivescorecardFormat", mLiveScorecardFormat.get(i));
+                    intent.putExtra("LivescoreFormat", mLiveScorecardFormat.get(i));
                     context.startActivity(intent);
                 }
             }

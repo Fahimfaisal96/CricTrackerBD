@@ -102,7 +102,7 @@ public class editScorecard2 extends Activity {
                 Toast.makeText(editScorecard2.this,"Update Done",Toast.LENGTH_LONG).show();
             }
         });
-        Intent intent = new Intent(this, showSingleScorecard.class);
+        Intent intent = new Intent(this, showSingleLiveScorecard2.class);
         intent.putExtra("showKey",key);
         intent.putExtra("ScorecardFormat",format);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

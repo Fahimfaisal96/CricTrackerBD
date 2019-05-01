@@ -59,37 +59,54 @@ public class registerUser extends Activity {
         final String sfullname = fullname.getText().toString().trim();
         final String semail = email.getText().toString().trim();
 
-        userAuthentication.createUserWithEmailAndPassword(semail,spassword)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            User user = new User(semail, sfullname, "false","-1");
-                            databaseReference.child(semail.replace('.','&')).setValue(user);
-                            FirebaseUser hmmttuser = userAuthentication.getCurrentUser();
-                            hmmttuser.sendEmailVerification();
-                            Toast.makeText(registerUser.this, "Verification Email Sent", Toast.LENGTH_SHORT).show();
+        if(!Patterns.EMAIL_ADDRESS.matcher(semail).matches()){
+            //Toast.makeText(this,"Please input Email Correctly",Toast.LENGTH_LONG).show();
+            email.setError("Please input Email Correctly.");
+            email.requestFocus();
+            return;
+        }
+        if(spassword.length() < 8){
+            //Toast.makeText(this,"Password has to be at least 8 chars",Toast.LENGTH_LONG).show();
+            password.setError("Password has to be at least 8 chars");
+            password.requestFocus();
+            return;
+        }
 
-                            email.setText("");
-                            password.setText("");
-                            fullname.setText("");
+        if(TextUtils.isEmpty(spassword) || TextUtils.isEmpty(sfullname) || TextUtils.isEmpty(semail) ) {
+            Toast.makeText(this, "Please fill out all the sections", Toast.LENGTH_LONG).show();
+        }
+        else {
+            userAuthentication.createUserWithEmailAndPassword(semail, spassword)
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                User user = new User(semail, sfullname, "false", "-1");
+                                databaseReference.child(semail.replace('.', '&')).setValue(user);
+                                FirebaseUser hmmttuser = userAuthentication.getCurrentUser();
+                                hmmttuser.sendEmailVerification();
+                                Toast.makeText(registerUser.this, "Verification Email Sent", Toast.LENGTH_SHORT).show();
 
-                            Intent intent = new Intent(registerUser.this, LoginPage.class);
-                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                            userAuthentication.signOut();
-                            startActivity(intent);
-                        }
-                        else{
-                            if(task.getException() instanceof FirebaseAuthUserCollisionException) {
-                                Toast.makeText(registerUser.this, "Email already taken.", Toast.LENGTH_LONG).show();
-                            }else{
-                                Toast.makeText(registerUser.this,task.getException().getMessage(),Toast.LENGTH_LONG).show();
+                                email.setText("");
+                                password.setText("");
+                                fullname.setText("");
+
+                                Intent intent = new Intent(registerUser.this, LoginPage.class);
+                                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                userAuthentication.signOut();
+                                startActivity(intent);
+                            } else {
+                                if (task.getException() instanceof FirebaseAuthUserCollisionException) {
+                                    Toast.makeText(registerUser.this, "Email already taken.", Toast.LENGTH_LONG).show();
+                                } else {
+                                    Toast.makeText(registerUser.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                                }
                             }
                         }
-                    }
 
-                });
 
+                    });
+        }
 
         
     }

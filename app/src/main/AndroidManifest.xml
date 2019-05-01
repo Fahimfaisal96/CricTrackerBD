@@ -18,10 +18,16 @@
         <activity android:name=".showSinglePlayer" />
         <activity android:name=".editScorecard2" />
         <activity android:name=".editScorecard" />
+        <activity android:name=".editLiveScorecard" />
+        <activity android:name=".editLiveScorecard2" />
         <activity android:name=".showSingleScorecard2" />
         <activity android:name=".showSingleScorecard" />
+        <activity android:name=".showSingleLiveScorecard" />
+        <activity android:name=".showSingleLiveScorecard2" />
         <activity android:name=".addScorecard2" />
         <activity android:name=".addScorecard" />
+        <activity android:name=".addLiveScorecard" />
+        <activity android:name=".addLiveScorecard2" />
         <activity android:name=".showScorecardDateList" />
         <activity android:name=".showScorecardFormat" />
         <activity android:name=".editFixture" />
@@ -30,6 +36,7 @@
         <activity android:name=".showDateList" />
         <activity android:name=".showFixtureFormat" />
         <activity android:name=".showLivescore" />
+        <activity android:name=".showLivescoreDateList" />
         <activity android:name=".showPlayers" />
         <activity android:name=".showScorecard" />
         <activity android:name=".showFixtures" />
