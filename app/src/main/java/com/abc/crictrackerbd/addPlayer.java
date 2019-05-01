@@ -42,6 +42,7 @@ public class addPlayer extends Activity {
     EditText bowlingStrikeRate;
     EditText bestFigure;
     EditText fifers;
+    EditText format;
     Button doneButton;
 
     private ProgressDialog mProgress;
