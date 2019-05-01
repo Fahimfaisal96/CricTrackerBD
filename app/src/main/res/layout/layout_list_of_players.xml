@@ -6,6 +6,7 @@
     android:layout_marginBottom="15dp"
     android:layout_marginStart="10dp"
     android:layout_marginEnd="10dp"
+    android:background="@drawable/description_back"
     android:id="@+id/player_element_layout">
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -22,6 +23,7 @@
         android:layout_toRightOf="@+id/image"
         android:layout_centerVertical="true"
         android:layout_marginLeft="30dp"
-        android:textSize="17sp"/>
+        android:textStyle="bold"
+        android:textSize="20sp"/>
 
 </RelativeLayout>
