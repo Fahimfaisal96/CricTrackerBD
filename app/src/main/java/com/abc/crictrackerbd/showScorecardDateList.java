@@ -31,7 +31,7 @@ public class showScorecardDateList extends Activity {
 
     User user;
 
-    BadgeView AddScorecardButton;
+    Button AddScorecardButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

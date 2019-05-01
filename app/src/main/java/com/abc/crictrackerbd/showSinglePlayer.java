@@ -76,7 +76,7 @@ public class showSinglePlayer extends Activity {
         bowlingStrikeRate = findViewById(R.id.bowlingStrikeRate_value);
         fifers = findViewById(R.id.fifers_value);
         bestFigure = findViewById(R.id.bestFigure_value);
-        editButton = findViewById(R.id.editProfile);
+        editButton = findViewById(R.id.deleteProfile);
         edit_profilePhoto_button = findViewById(R.id.Edit_photo_button);
         profilePicture = findViewById(R.id.singleUser_profile_image);
 
