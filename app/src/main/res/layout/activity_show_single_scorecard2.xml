@@ -8,6 +8,7 @@
     android:paddingEnd="10dp"
     android:paddingTop="30dp"
     android:layout_height="fill_parent"
+    android:background="@drawable/wall"
     android:orientation="vertical"
     tools:context=".showSingleScorecard2">
 

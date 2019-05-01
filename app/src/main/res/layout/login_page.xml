@@ -103,6 +103,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="472dp"
+        android:background="#980808"
         android:textColor="#ffffff"
         android:text="New user? Sign up!" />
 </RelativeLayout>

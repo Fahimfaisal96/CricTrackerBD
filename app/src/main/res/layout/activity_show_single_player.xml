@@ -45,6 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:layout_margin="5dp"
+        android:background="@drawable/description_back"
         android:orientation="vertical">
 
 
@@ -67,14 +68,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Name" />
+                        android:text="Name"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/name_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -87,14 +90,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Role" />
+                        android:text="Role"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/role_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -107,14 +112,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Match" />
+                        android:text="Match"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/match_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -127,14 +134,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Innings" />
+                        android:text="Innings"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/innings_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -147,14 +156,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Runs" />
+                        android:text="Runs"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/runs_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -167,14 +178,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Average" />
+                        android:text="Average"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/average_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -187,14 +200,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Strike Rate" />
+                        android:text="Strike Rate"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/strikeRate_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -207,14 +222,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Hundreds" />
+                        android:text="Hundreds"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/hundreds_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -227,14 +244,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Fifties" />
+                        android:text="Fifties"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/fifties_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -247,14 +266,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Not outs" />
+                        android:text="Not outs"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/notOuts_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -267,14 +288,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Best score" />
+                        android:text="Best score"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/bestScore_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -287,14 +310,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Balls" />
+                        android:text="Balls"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/balls_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -307,14 +332,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Runs conceded" />
+                        android:text="Runs conceded"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/runsConceded_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -327,14 +354,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Wickets" />
+                        android:text="Wickets"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/wickets_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -347,14 +376,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Economy" />
+                        android:text="Economy"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/economy_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -367,14 +398,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Bowling average" />
+                        android:text="Bowling average"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/bowlingAverage_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -387,14 +420,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Bowling strike rate" />
+                        android:text="Bowling strike rate"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/bowlingStrikeRate_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -407,14 +442,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Fifers" />
+                        android:text="Fifers"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/fifers_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -427,14 +464,16 @@
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Best figure" />
+                        android:text="Best figure"
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/bestFigure_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textColor="#fff"/>
                 </LinearLayout>
 
             </LinearLayout>

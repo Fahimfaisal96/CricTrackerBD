@@ -42,7 +42,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:layout_below="@+id/regiPasswordField"
-        android:background="@drawable/wall"
         android:hint="Full Name"
         android:textColor="#fff"
         android:textColorHint="#808080"
@@ -77,7 +76,7 @@
         android:layout_gravity="center"
         android:layout_below="@+id/fullNameField"
         android:layout_marginTop="40dp"
-        android:background="@android:color/holo_green_light"
+        android:background="#980808"
         android:textColor="#fff"
         android:text="Done" />
 
