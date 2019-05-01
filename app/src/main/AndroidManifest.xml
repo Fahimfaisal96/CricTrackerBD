@@ -35,6 +35,7 @@
         <activity android:name=".showSingleFixture" />
         <activity android:name=".showDateList" />
         <activity android:name=".showFixtureFormat" />
+        <activity android:name=".showPlayerFormat" />
         <activity android:name=".showLivescore" />
         <activity android:name=".showLivescoreDateList" />
         <activity android:name=".showPlayers" />

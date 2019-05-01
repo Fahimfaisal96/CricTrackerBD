@@ -46,7 +46,9 @@ public class showPlayers extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_players);
 
-        playerPageDataBaseRef = FirebaseDatabase.getInstance().getReference("player/"+format );
+        format = getIntent().getStringExtra("PlayerFormat");
+
+        playerPageDataBaseRef = FirebaseDatabase.getInstance().getReference("players/"+format );
         userPageAuth = FirebaseAuth.getInstance();
         AddPlayerButton = findViewById(R.id.addPlayer);
         AddPlayerButton.setVisibility(View.GONE);
