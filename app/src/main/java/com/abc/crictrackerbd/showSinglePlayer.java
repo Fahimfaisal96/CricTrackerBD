@@ -46,11 +46,12 @@ public class showSinglePlayer extends Activity {
 
     ImageView profilePicture;
     Button edit_profilePhoto_button;
-    Button editButton;
+    Button deleteButton;
 
     String nowUser;
     Player player;
     String key,format;
+    User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +77,7 @@ public class showSinglePlayer extends Activity {
         bowlingStrikeRate = findViewById(R.id.bowlingStrikeRate_value);
         fifers = findViewById(R.id.fifers_value);
         bestFigure = findViewById(R.id.bestFigure_value);
-        editButton = findViewById(R.id.deleteProfile);
+        deleteButton = findViewById(R.id.deleteProfile);
         edit_profilePhoto_button = findViewById(R.id.Edit_photo_button);
         profilePicture = findViewById(R.id.singleUser_profile_image);
 
@@ -90,6 +91,23 @@ public class showSinglePlayer extends Activity {
         key = getIntent().getStringExtra("showKey");
         format = getIntent().getStringExtra("PlayerFormat");
         showSinglePlayerDatabaseRef = FirebaseDatabase.getInstance().getReference("players/"+ format+ "/" + key);
+
+        userDatabase.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                user=dataSnapshot.getValue(User.class);
+                if(user.getIsModerator().equals("true")){
+                    System.out.println("habijabi");
+                    edit_profilePhoto_button.setVisibility(View.VISIBLE);
+                    deleteButton.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 
 
         showSinglePlayerDatabaseRef.addValueEventListener(new ValueEventListener() {
@@ -134,6 +152,14 @@ public class showSinglePlayer extends Activity {
             @Override
             public void onClick(View v) {
                 toEditProfilePicture();
+            }
+        });
+
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showSinglePlayerDatabaseRef.removeValue();
+                finish();
             }
         });
     }
