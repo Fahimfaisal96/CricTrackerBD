@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -77,6 +78,7 @@ public class showSinglePlayer extends Activity {
         bestFigure = findViewById(R.id.bestFigure_value);
         editButton = findViewById(R.id.editProfile);
         edit_profilePhoto_button = findViewById(R.id.Edit_photo_button);
+        profilePicture = findViewById(R.id.singleUser_profile_image);
 
 
         loginAuthentication = FirebaseAuth.getInstance();
@@ -113,6 +115,10 @@ public class showSinglePlayer extends Activity {
                 bowlingStrikeRate.setText(player.getBowlingStrikeRate());
                 fifers.setText(player.getFifers());
                 bestFigure.setText(player.getBestFigure());
+
+                Glide.with(showSinglePlayer.this)
+                        .load(player.getDpUrl())
+                        .into(profilePicture);
 
 
                 showSinglePlayerDatabaseRef.removeEventListener(this);
